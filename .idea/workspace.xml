@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Refactor Main class to Driver.&#10;Prompt user for values instead of hardcoding.&#10;Iterate to create new vehicles, run vehicles on trips.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/VehicleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,21 +33,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/Brandan/IdeaProjects/Vehicles2022mvn/src/main/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brandan/IdeaProjects/Vehicles2022mvn/src/main/java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.VehicleTest.go_increaseOdometerBy100AndDecreasesGallonsOfGasBy5WhenMilesPerGallonIs20">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Driver" />
       <module name="Vehicles2022mvn" />
@@ -47,8 +54,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VehicleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vehicles2022mvn" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VehicleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleTest.go_increaseOdometerBy100AndDecreasesGallonsOfGasBy5WhenMilesPerGallonIs20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vehicles2022mvn" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VehicleTest" />
+      <option name="METHOD_NAME" value="go_increaseOdometerBy100AndDecreasesGallonsOfGasBy5WhenMilesPerGallonIs20" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VehicleTest.go_increaseOdometerBy100AndDecreasesGallonsOfGasBy5WhenMilesPerGallonIs20" />
+        <item itemvalue="JUnit.VehicleTest" />
         <item itemvalue="Application.Driver" />
       </list>
     </recent_temporary>
@@ -62,6 +90,14 @@
       <option name="presentableId" value="Default" />
       <updated>1661723375528</updated>
     </task>
+    <task id="LOCAL-00001" summary="Refactor Main class to Driver.&#10;Prompt user for values instead of hardcoding.&#10;Iterate to create new vehicles, run vehicles on trips.">
+      <created>1661731087263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661731087264</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +110,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor Main class to Driver.&#10;Prompt user for values instead of hardcoding.&#10;Iterate to create new vehicles, run vehicles on trips." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor Main class to Driver.&#10;Prompt user for values instead of hardcoding.&#10;Iterate to create new vehicles, run vehicles on trips." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -92,6 +132,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
           <line>44</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/VehicleTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
