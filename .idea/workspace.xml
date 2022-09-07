@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Refactor Main class to Driver.&#10;Prompt user for values instead of hardcoding.&#10;Iterate to create new vehicles, run vehicles on trips.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/VehicleTest.java" afterDir="false" />
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Add a simple unit test and JUnit support.&#10;See how I did it in this video: https://somup.com/c3QnfIUb4p">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Sonic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MustangTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PriusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SonicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,10 +55,28 @@
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VehicleTest.go_increaseOdometerBy100AndDecreasesGallonsOfGasBy5WhenMilesPerGallonIs20">
+  <component name="RunManager" selected="JUnit.SonicTest">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Driver" />
       <module name="Vehicles2022mvn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vehicles2022mvn" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FooTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SonicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vehicles2022mvn" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SonicTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,9 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VehicleTest.go_increaseOdometerBy100AndDecreasesGallonsOfGasBy5WhenMilesPerGallonIs20" />
-        <item itemvalue="JUnit.VehicleTest" />
+        <item itemvalue="JUnit.SonicTest" />
+        <item itemvalue="JUnit.FooTest" />
         <item itemvalue="Application.Driver" />
+        <item itemvalue="JUnit.VehicleTest" />
+        <item itemvalue="JUnit.VehicleTest.go_increaseOdometerBy100AndDecreasesGallonsOfGasBy5WhenMilesPerGallonIs20" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661731087264</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add a simple unit test and JUnit support.&#10;See how I did it in this video: https://somup.com/c3QnfIUb4p">
+      <created>1662092046830</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662092046833</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,7 +149,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor Main class to Driver.&#10;Prompt user for values instead of hardcoding.&#10;Iterate to create new vehicles, run vehicles on trips." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Main class to Driver.&#10;Prompt user for values instead of hardcoding.&#10;Iterate to create new vehicles, run vehicles on trips." />
+    <MESSAGE value="Add a simple unit test and JUnit support.&#10;See how I did it in this video: https://somup.com/c3QnfIUb4p" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a simple unit test and JUnit support.&#10;See how I did it in this video: https://somup.com/c3QnfIUb4p" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -137,6 +174,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/VehicleTest.java</url>
           <line>23</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/VehicleTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
