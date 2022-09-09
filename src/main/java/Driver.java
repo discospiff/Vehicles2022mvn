@@ -3,6 +3,9 @@ import java.util.ArrayList;
 
 public class Driver {
 
+    public static final String SONIC = "Sonic";
+    public static final String MUSTANG = "Mustang";
+    public static final String PRIUS = "Prius";
     private static ArrayList<Vehicle> allVehicles = new ArrayList<>();
 //    private static int[] milesPerGallon = {20, 25, 15};
 //    private static double[] gallonsOfGas = {10.0, 8, 12};
@@ -19,9 +22,10 @@ public class Driver {
 
         int goAgain = JOptionPane.NO_OPTION;
         do {
-            String nickname = JOptionPane.showInputDialog("What is the nickname of this vehicle?");
+            String[] availableCars = {SONIC, MUSTANG, PRIUS};
+            Object carType = JOptionPane.showInputDialog(null, "Choose a car to create", "Choose a Car", JOptionPane.QUESTION_MESSAGE, null, availableCars, SONIC);
 
-            Vehicle vehicle = new Vehicle();
+            Vehicle vehicle = createVehicle(carType);
             String strMilesPerGallon = JOptionPane.showInputDialog("Enter Miles per Gallon");
             int milesPerGallon = Integer.parseInt(strMilesPerGallon);
             vehicle.setMilesPerGallon(milesPerGallon);
@@ -51,6 +55,25 @@ public class Driver {
             }
         } while (JOptionPane.YES_OPTION  == JOptionPane.showConfirmDialog(null, "Do you want to take another trip?", "Go again?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE));
 
+    }
+
+
+    /**
+     * Simple factory method to create and return a subclass of type Vehicle.
+     *
+     * @param selectedVehicle A string representing the vehicle we want to create.
+     * @return the created vehicle.
+     */
+    public static Vehicle createVehicle(final Object selectedVehicle) {
+        Vehicle vehicle = new Vehicle();
+        if (selectedVehicle.toString().equals(SONIC)) {
+            vehicle = new Sonic();
+        } else if (selectedVehicle.toString().equals(MUSTANG)) {
+            vehicle = new Mustang();
+        } else if (selectedVehicle.toString().equals(PRIUS)) {
+            vehicle = new Prius();
+        }
+        return vehicle;
     }
 
 }
