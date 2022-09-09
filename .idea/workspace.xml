@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Create a subclass that overrides a method, and invokes super when needed to get that method behavior.">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Remove test exclusions.">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662683924328</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Remove test exclusions.">
+      <created>1662684088454</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662684088454</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +181,8 @@
     <MESSAGE value="Add a subclass of Vehicle, and a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/iESBqxJ-sAE" />
     <MESSAGE value="Add Mustang, a subclass of Vehicle, and MustangTest, a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/QxNi-MSIhyg" />
     <MESSAGE value="Create a subclass that overrides a method, and invokes super when needed to get that method behavior." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a subclass that overrides a method, and invokes super when needed to get that method behavior." />
+    <MESSAGE value="Remove test exclusions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove test exclusions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
