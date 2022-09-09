@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Add a subclass of Vehicle, and a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/iESBqxJ-sAE">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mustang.java" afterDir="false" />
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Add Mustang, a subclass of Vehicle, and MustangTest, a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/QxNi-MSIhyg">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prius.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MustangTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MustangTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PriusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PriusTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,23 +55,7 @@
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MustangTest">
-    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Driver" />
-      <module name="Vehicles2022mvn" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Vehicles2022mvn" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FooTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PriusTest">
     <configuration name="MustangTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vehicles2022mvn" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,6 +75,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PriusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vehicles2022mvn" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PriusTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriusTest.go_runningWithGas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vehicles2022mvn" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PriusTest" />
+      <option name="METHOD_NAME" value="go_runningWithGas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SonicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vehicles2022mvn" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PriusTest" />
+        <item itemvalue="JUnit.PriusTest.go_runningWithGas" />
         <item itemvalue="JUnit.MustangTest" />
         <item itemvalue="JUnit.MustangTest.convertible_WhenConvertibleItIsAConvertible" />
         <item itemvalue="JUnit.SonicTest" />
-        <item itemvalue="JUnit.FooTest" />
-        <item itemvalue="Application.Driver" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662523376008</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Mustang, a subclass of Vehicle, and MustangTest, a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/QxNi-MSIhyg">
+      <created>1662682827685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662682827686</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,7 +168,8 @@
     <MESSAGE value="Refactor Main class to Driver.&#10;Prompt user for values instead of hardcoding.&#10;Iterate to create new vehicles, run vehicles on trips." />
     <MESSAGE value="Add a simple unit test and JUnit support.&#10;See how I did it in this video: https://somup.com/c3QnfIUb4p" />
     <MESSAGE value="Add a subclass of Vehicle, and a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/iESBqxJ-sAE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a subclass of Vehicle, and a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/iESBqxJ-sAE" />
+    <MESSAGE value="Add Mustang, a subclass of Vehicle, and MustangTest, a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/QxNi-MSIhyg" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Mustang, a subclass of Vehicle, and MustangTest, a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/QxNi-MSIhyg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
