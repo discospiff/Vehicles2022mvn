@@ -25,12 +25,7 @@
                         <version>5.2.0-M1</version>
                     </dependency>
                 </dependencies>
-                <configuration>
-                    <excludes>
-                        <exclude>com.driver.test.MustangTest</exclude>
-                        <exclude>com.driver.test.PriusTest</exclude>
-                    </excludes>
-                </configuration>
+
             </plugin>
         </plugins>
     </build>
