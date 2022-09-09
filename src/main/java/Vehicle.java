@@ -9,7 +9,7 @@ public class Vehicle {
     }
     private int milesPerGallon = 20;
     private double gallonsOfGas = 10.0;
-    private int odometer  = 0;
+    protected int odometer  = 0;
 
     private String color;
 
