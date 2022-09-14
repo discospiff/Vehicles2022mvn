@@ -41,4 +41,9 @@ public class Vehicle {
         setGallonsOfGas(getGallonsOfGas() - (milesDriven / getMilesPerGallon()));
         setOdometer(getOdometer() + milesDriven);
     }
+
+    @Override
+    public String toString() {
+        return " Odometer " + getOdometer() + " Gallons of Gas " + getGallonsOfGas();
+    }
 }

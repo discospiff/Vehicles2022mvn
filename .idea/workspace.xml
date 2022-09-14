@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Remove test exclusions.">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prius.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662684190055</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk">
+      <created>1662697125003</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662697125003</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,16 +196,12 @@
     <MESSAGE value="Add Mustang, a subclass of Vehicle, and MustangTest, a subclass of VehicleTest.&#10;See how I did it in this video: https://youtu.be/QxNi-MSIhyg" />
     <MESSAGE value="Create a subclass that overrides a method, and invokes super when needed to get that method behavior." />
     <MESSAGE value="Remove test exclusions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove test exclusions." />
+    <MESSAGE value="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/VehicleTest.java</url>
           <line>23</line>
@@ -225,9 +228,9 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
