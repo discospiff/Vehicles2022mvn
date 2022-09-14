@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Override toString() method from java.lang.Object&#10;See how I did it in this video: https://somup.com/c3Q2clUxX3">
-      <change afterPath="$PROJECT_DIR$/inventory.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InventoryReader.java" afterDir="false" />
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Read data from a file, and use the data to create objects.&#10;See how I did it here: https://somup.com/c3Q2VkUxDr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sonic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sonic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InventoryReader">
+  <component name="RunManager" selected="Application.Driver">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Driver" />
       <module name="Vehicles2022mvn" />
@@ -100,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InventoryReader" />
         <item itemvalue="Application.Driver" />
+        <item itemvalue="Application.InventoryReader" />
         <item itemvalue="JUnit.PriusTest" />
         <item itemvalue="JUnit.PriusTest.go_runningWithGas" />
         <item itemvalue="JUnit.MustangTest" />
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662697125003</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Read data from a file, and use the data to create objects.&#10;See how I did it here: https://somup.com/c3Q2VkUxDr">
+      <created>1663119648564</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663119648565</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +202,8 @@
     <MESSAGE value="Create a subclass that overrides a method, and invokes super when needed to get that method behavior." />
     <MESSAGE value="Remove test exclusions." />
     <MESSAGE value="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk" />
+    <MESSAGE value="Read data from a file, and use the data to create objects.&#10;See how I did it here: https://somup.com/c3Q2VkUxDr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read data from a file, and use the data to create objects.&#10;See how I did it here: https://somup.com/c3Q2VkUxDr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -226,14 +234,14 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
           <line>18</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

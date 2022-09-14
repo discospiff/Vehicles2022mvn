@@ -52,6 +52,7 @@ public class Driver {
                 System.out.println(vehicle);
                 vehicle.go(milesDriven);
                 System.out.println(vehicle);
+                Sonic.warrantyNumber = "1-800-462-8782";
             }
         } while (JOptionPane.YES_OPTION  == JOptionPane.showConfirmDialog(null, "Do you want to take another trip?", "Go again?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE));
 
