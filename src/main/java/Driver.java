@@ -49,9 +49,9 @@ public class Driver {
             String strMilesDriven = JOptionPane.showInputDialog("How far do you want to go?");
             int milesDriven = Integer.parseInt(strMilesDriven);
             for (Vehicle vehicle : allVehicles) {
-                System.out.println(" Odometer " + vehicle.getOdometer() + " Gallons of Gas " + vehicle.getGallonsOfGas());
+                System.out.println(vehicle);
                 vehicle.go(milesDriven);
-                System.out.println(" Odometer " + vehicle.getOdometer() + " Gallons of Gas " + vehicle.getGallonsOfGas());
+                System.out.println(vehicle);
             }
         } while (JOptionPane.YES_OPTION  == JOptionPane.showConfirmDialog(null, "Do you want to take another trip?", "Go again?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE));
 
