@@ -7,9 +7,6 @@ public class Driver {
     public static final String MUSTANG = "Mustang";
     public static final String PRIUS = "Prius";
     private static ArrayList<Vehicle> allVehicles = new ArrayList<>();
-//    private static int[] milesPerGallon = {20, 25, 15};
-//    private static double[] gallonsOfGas = {10.0, 8, 12};
-//    private static int[] odometer  = {0, 10000, 20000};
 
     public static void main(String[] args) {
         System.out.println("In Vehicles Main");
