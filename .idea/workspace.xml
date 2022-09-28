@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Remove commented code.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mustang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mustang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prius.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sonic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sonic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663121361132</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Remove commented code.">
+      <created>1664325975186</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664325975186</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,7 +222,8 @@
     <MESSAGE value="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk" />
     <MESSAGE value="Read data from a file, and use the data to create objects.&#10;See how I did it here: https://somup.com/c3Q2VkUxDr" />
     <MESSAGE value="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8" />
+    <MESSAGE value="Remove commented code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove commented code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -237,7 +250,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Prius.java</url>
-          <line>17</line>
+          <line>20</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -247,13 +260,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="14" />
+          <line>40</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

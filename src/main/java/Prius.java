@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Prius extends Vehicle implements LowEmissionVehicle {
 
     public static final int CHARGE_DENOMINATOR = 20;
@@ -32,5 +35,18 @@ public class Prius extends Vehicle implements LowEmissionVehicle {
     @Override
     public void applyTaxRebate(int amount) {
         taxRebate = amount;
+    }
+
+    @Override
+    protected List<String> getRecommendations() {
+        List<String> recommendations = new ArrayList<String>();
+        recommendations.add("Tire Rotation");
+        recommendations.add("Check Battery Health");
+        return recommendations;
+    }
+
+    @Override
+    protected int getServiceInterval() {
+        return 30000;
     }
 }

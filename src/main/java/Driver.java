@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Driver {
 
@@ -61,7 +62,10 @@ public class Driver {
                 System.out.println(vehicle);
                 vehicle.go(milesDriven);
                 System.out.println(vehicle);
-                Sonic.warrantyNumber = "1-800-462-8782";
+                List<String> requiredMaintenance = vehicle.checkForRequiredMaintenance();
+                for (String maintenance : requiredMaintenance) {
+                    JOptionPane.showMessageDialog(null, maintenance, "Suggested Maintenance", JOptionPane.INFORMATION_MESSAGE);
+                }
             }
         } while (JOptionPane.YES_OPTION  == JOptionPane.showConfirmDialog(null, "Do you want to take another trip?", "Go again?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE));
 
@@ -75,7 +79,7 @@ public class Driver {
      * @return the created vehicle.
      */
     public static Vehicle createVehicle(final Object selectedVehicle) {
-        Vehicle vehicle = new Vehicle();
+        Vehicle vehicle = null;
         if (selectedVehicle.toString().equals(SONIC)) {
             vehicle = new Sonic();
         } else if (selectedVehicle.toString().equals(MUSTANG)) {
