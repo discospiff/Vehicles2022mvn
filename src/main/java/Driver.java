@@ -39,6 +39,18 @@ public class Driver {
             vehicle.setOdometer(odometer);
             allVehicles.add(vehicle);
 
+            //is the object inside the vehicle variable of type Prius?
+            if (vehicle instanceof Prius) {
+                Prius prius = (Prius) vehicle;
+                String strCharge = JOptionPane.showInputDialog("What is the battery charge?");
+                int charge = Integer.parseInt(strCharge);
+
+                prius.setCharge(charge);
+
+            }
+
+
+
             goAgain = JOptionPane.showConfirmDialog(null, "Do you want to enter another vehicle?", "Go Again?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
         } while (goAgain == JOptionPane.YES_OPTION);
 
@@ -52,6 +64,7 @@ public class Driver {
                 System.out.println(vehicle);
                 vehicle.go(milesDriven);
                 System.out.println(vehicle);
+                Sonic.warrantyNumber = "1-800-462-8782";
             }
         } while (JOptionPane.YES_OPTION  == JOptionPane.showConfirmDialog(null, "Do you want to take another trip?", "Go again?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE));
 
@@ -69,11 +82,18 @@ public class Driver {
         if (selectedVehicle.toString().equals(SONIC)) {
             vehicle = new Sonic();
         } else if (selectedVehicle.toString().equals(MUSTANG)) {
-            vehicle = new Mustang();
+            Mustang mustang = new Mustang();
+            vehicle = mustang;
         } else if (selectedVehicle.toString().equals(PRIUS)) {
-            vehicle = new Prius();
+            Prius prius = new Prius();
+            applyForTaxCredit(prius);
+            vehicle = prius;
         }
         return vehicle;
+    }
+
+    public static void applyForTaxCredit(LowEmissionVehicle lev) {
+        lev.applyTaxRebate(100);
     }
 
 }

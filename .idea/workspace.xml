@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8">
+      <change afterPath="$PROJECT_DIR$/src/main/java/LowEmissionVehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prius.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -38,19 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brandan/IdeaProjects/Vehicles2022mvn/src/main/java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/Users/Brandan/IdeaProjects/Vehicles2022mvn"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn" />
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
@@ -62,21 +65,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InventoryReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InventoryReader" />
+      <module name="Vehicles2022mvn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MustangTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vehicles2022mvn" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MustangTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MustangTest.convertible_WhenConvertibleItIsAConvertible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Vehicles2022mvn" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MustangTest" />
-      <option name="METHOD_NAME" value="convertible_WhenConvertibleItIsAConvertible" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,10 +103,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Driver" />
+        <item itemvalue="Application.InventoryReader" />
         <item itemvalue="JUnit.PriusTest" />
         <item itemvalue="JUnit.PriusTest.go_runningWithGas" />
         <item itemvalue="JUnit.MustangTest" />
-        <item itemvalue="JUnit.MustangTest.convertible_WhenConvertibleItIsAConvertible" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662697125003</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Read data from a file, and use the data to create objects.&#10;See how I did it here: https://somup.com/c3Q2VkUxDr">
+      <created>1663119648564</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663119648565</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8">
+      <created>1663121361131</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663121361132</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +211,9 @@
     <MESSAGE value="Create a subclass that overrides a method, and invokes super when needed to get that method behavior." />
     <MESSAGE value="Remove test exclusions." />
     <MESSAGE value="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add JOptionPane.showInputDialog with a dropdown of pre-selected values.&#10;See how I did it in this video: https://youtu.be/ssTT59xYLRk" />
+    <MESSAGE value="Read data from a file, and use the data to create objects.&#10;See how I did it here: https://somup.com/c3Q2VkUxDr" />
+    <MESSAGE value="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,13 +240,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Prius.java</url>
-          <line>15</line>
+          <line>17</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
