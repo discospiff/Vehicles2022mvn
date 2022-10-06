@@ -1,20 +1,35 @@
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Driver {
 
-    public static final String SONIC = "Sonic";
-    public static final String MUSTANG = "Mustang";
-    public static final String PRIUS = "Prius";
-    private static ArrayList<Vehicle> allVehicles = new ArrayList<>();
+    public final String SONIC = "Sonic";
+    public  final String MUSTANG = "Mustang";
+    public  final String PRIUS = "Prius";
+    private ArrayList<Vehicle> allVehicles = new ArrayList<>();
 
+    private static Driver driver = null;
+    
+    private Driver() {
+
+    }
     public static void main(String[] args) {
         System.out.println("In Vehicles Main");
-        promptUser();
-        displayOutput();
+        Driver driver = getInstance();
+        Driver driver2 = getInstance();
+        driver.promptUser();
+        driver.displayOutput();
     }
 
-    public static void promptUser() {
+    public static Driver getInstance() {
+        if (driver == null) {
+            driver = new Driver();
+        }
+        return driver;
+    }
+
+    public void promptUser() {
         System.out.println("Second Line");
 
         int goAgain = JOptionPane.NO_OPTION;
@@ -53,7 +68,7 @@ public class Driver {
 
     }
 
-    private static void displayOutput() {
+    private void displayOutput() {
         do {
             String strMilesDriven = JOptionPane.showInputDialog("How far do you want to go?");
             int milesDriven = Integer.parseInt(strMilesDriven);
@@ -61,7 +76,10 @@ public class Driver {
                 System.out.println(vehicle);
                 vehicle.go(milesDriven);
                 System.out.println(vehicle);
-                Sonic.warrantyNumber = "1-800-462-8782";
+                List<String> requiredMaintenance = vehicle.checkForRequiredMaintenance();
+                for (String maintenance : requiredMaintenance) {
+                    JOptionPane.showMessageDialog(null, maintenance, "Suggested Maintenance", JOptionPane.INFORMATION_MESSAGE);
+                }
             }
         } while (JOptionPane.YES_OPTION  == JOptionPane.showConfirmDialog(null, "Do you want to take another trip?", "Go again?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE));
 
@@ -74,8 +92,8 @@ public class Driver {
      * @param selectedVehicle A string representing the vehicle we want to create.
      * @return the created vehicle.
      */
-    public static Vehicle createVehicle(final Object selectedVehicle) {
-        Vehicle vehicle = new Vehicle();
+    public Vehicle createVehicle(final Object selectedVehicle) {
+        Vehicle vehicle = null;
         if (selectedVehicle.toString().equals(SONIC)) {
             vehicle = new Sonic();
         } else if (selectedVehicle.toString().equals(MUSTANG)) {
@@ -89,7 +107,7 @@ public class Driver {
         return vehicle;
     }
 
-    public static void applyForTaxCredit(LowEmissionVehicle lev) {
+    public void applyForTaxCredit(LowEmissionVehicle lev) {
         lev.applyTaxRebate(100);
     }
 

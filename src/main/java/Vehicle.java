@@ -1,4 +1,7 @@
-public class Vehicle {
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Vehicle {
 
 
     public Vehicle() {
@@ -10,6 +13,8 @@ public class Vehicle {
     private int milesPerGallon = 20;
     private double gallonsOfGas = 10.0;
     protected int odometer  = 0;
+
+    protected int previousOdometer = 0;
 
     private String color;
 
@@ -38,6 +43,7 @@ public class Vehicle {
     }
 
     public void go(int milesDriven) {
+        previousOdometer = getOdometer();
         setGallonsOfGas(getGallonsOfGas() - (milesDriven / getMilesPerGallon()));
         setOdometer(getOdometer() + milesDriven);
     }
@@ -46,4 +52,18 @@ public class Vehicle {
     public String toString() {
         return " Odometer " + getOdometer() + " Gallons of Gas " + getGallonsOfGas();
     }
+
+    public List<String> checkForRequiredMaintenance() {
+        List<String> requiredMaintenance = new ArrayList<String>();
+        int serviceInterval = getServiceInterval();
+        if (serviceInterval >= previousOdometer && serviceInterval <= odometer) {
+            requiredMaintenance = getRecommendations();
+        }
+
+        return requiredMaintenance;
+    }
+
+    protected abstract List<String> getRecommendations();
+
+    protected abstract int getServiceInterval();
 }
