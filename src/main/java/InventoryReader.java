@@ -31,7 +31,7 @@ public class InventoryReader {
                     int milesPerGallon = Integer.parseInt(strMilesPerGallon);
                     String strGallonsOfGas = inventoryArray[3];
                     double gallonsOfGas = Double.parseDouble(strGallonsOfGas);
-                    Vehicle vehicle = Driver.createVehicle(carType);
+                    Vehicle vehicle = Driver.getInstance().createVehicle(carType);
                     vehicle.setOdometer(odometer);
                     vehicle.setGallonsOfGas(gallonsOfGas);
                     vehicle.setMilesPerGallon(milesPerGallon);

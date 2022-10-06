@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Remove commented code.">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mustang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mustang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prius.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sonic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sonic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InventoryReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InventoryReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664325975186</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE">
+      <created>1664333801539</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664333801539</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +227,8 @@
     <MESSAGE value="Read data from a file, and use the data to create objects.&#10;See how I did it here: https://somup.com/c3Q2VkUxDr" />
     <MESSAGE value="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8" />
     <MESSAGE value="Remove commented code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove commented code." />
+    <MESSAGE value="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -260,7 +265,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>40</line>
+          <line>54</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -272,6 +277,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
           <line>59</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
