@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Create a Java Swing form with nested layouts: BorderLayout, FormLayout, and FlowLayout.&#10;See how I did it in this video: https://youtu.be/WirTuTzfKiE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664333801539</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Create a Java Swing form with nested layouts: BorderLayout, FormLayout, and FlowLayout.&#10;See how I did it in this video: https://youtu.be/WirTuTzfKiE">
+      <created>1665027799932</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665027799932</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +235,8 @@
     <MESSAGE value="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8" />
     <MESSAGE value="Remove commented code." />
     <MESSAGE value="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE" />
+    <MESSAGE value="Create a Java Swing form with nested layouts: BorderLayout, FormLayout, and FlowLayout.&#10;See how I did it in this video: https://youtu.be/WirTuTzfKiE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a Java Swing form with nested layouts: BorderLayout, FormLayout, and FlowLayout.&#10;See how I did it in this video: https://youtu.be/WirTuTzfKiE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,6 +295,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
           <line>17</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
