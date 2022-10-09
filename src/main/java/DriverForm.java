@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Vector;
 
 public class DriverForm {
     private JPanel pnlMain;
@@ -17,9 +18,13 @@ public class DriverForm {
     private JTextField txtMilesPerGallon;
     private JTextField txtGallonsOfGas;
 
+    private Vector<Vehicle> allVehicles =  new Vector<>();
+
     public DriverForm() {
 
         initializeVehicleTypeComboBox();
+
+        lstVehicles.setListData(allVehicles);
         btnSave.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -39,6 +44,17 @@ public class DriverForm {
                 vehicle.setGallonsOfGas(gallonsOfGas);
                 vehicle.setMilesPerGallon(milesPerGallon);
 
+                allVehicles.add(vehicle);
+                lstVehicles.updateUI();
+            }
+        });
+        btnDrive.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String strDistance = txtDistance.getText();
+                int distance = Integer.parseInt(strDistance);
+                allVehicles.stream().forEach(vehicle -> {vehicle.go(distance);});
+                lstVehicles.updateUI();
             }
         });
     }

@@ -30,6 +30,9 @@
           <component id="99009" class="javax.swing.JButton" binding="btnDrive">
             <constraints/>
             <properties>
+              <maximumSize width="90" height="30"/>
+              <minimumSize width="90" height="30"/>
+              <preferredSize width="90" height="30"/>
               <text value="Drive"/>
             </properties>
           </component>
@@ -141,18 +144,10 @@
               <component id="1d781" class="javax.swing.JList" binding="lstVehicles">
                 <constraints/>
                 <properties>
-                  <model>
-                    <item value="Cavalier"/>
-                    <item value="Mustang"/>
-                    <item value="Prius"/>
-                    <item value="Sonic"/>
-                    <item value="Bolt"/>
-                    <item value="Tacoma"/>
-                    <item value="Camry"/>
-                    <item value="G6"/>
-                    <item value="F150"/>
-                    <item value="Ranger"/>
-                  </model>
+                  <maximumSize width="600" height="200"/>
+                  <minimumSize width="400" height="100"/>
+                  <model/>
+                  <preferredSize width="400" height="100"/>
                 </properties>
               </component>
             </children>
