@@ -17,6 +17,7 @@ public class DriverForm {
     private JTextField txtOdometer;
     private JTextField txtMilesPerGallon;
     private JTextField txtGallonsOfGas;
+    private JCheckBox cbxConvertible;
 
     private Vector<Vehicle> allVehicles =  new Vector<>();
 
@@ -44,6 +45,13 @@ public class DriverForm {
                 vehicle.setGallonsOfGas(gallonsOfGas);
                 vehicle.setMilesPerGallon(milesPerGallon);
 
+                if (cmbMakeModel.getSelectedItem().toString().equals(Driver.MUSTANG)) {
+                    if (vehicle instanceof Mustang) {
+                        Mustang mustang = (Mustang) vehicle;
+                        mustang.setConvertible(cbxConvertible.isSelected());
+                    }
+                }
+
                 allVehicles.add(vehicle);
                 lstVehicles.updateUI();
             }
@@ -55,6 +63,17 @@ public class DriverForm {
                 int distance = Integer.parseInt(strDistance);
                 allVehicles.stream().forEach(vehicle -> {vehicle.go(distance);});
                 lstVehicles.updateUI();
+            }
+        });
+        cmbMakeModel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (cmbMakeModel.getSelectedItem().toString().equals(Driver.MUSTANG)) {
+                    cbxConvertible.setEnabled(true);
+                } else {
+                    cbxConvertible.setEnabled(false);
+                    cbxConvertible.setSelected(false);
+                }
             }
         });
     }

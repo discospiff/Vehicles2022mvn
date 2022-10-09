@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Gather data from a Swing form with JTextField, JComboBox, and JButton.&#10;See how I did it in this video: https://youtu.be/1IgeJYDuS_8">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665108469991</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4">
+      <created>1665350974102</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665350974102</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +251,8 @@
     <MESSAGE value="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE" />
     <MESSAGE value="Create a Java Swing form with nested layouts: BorderLayout, FormLayout, and FlowLayout.&#10;See how I did it in this video: https://youtu.be/WirTuTzfKiE" />
     <MESSAGE value="Gather data from a Swing form with JTextField, JComboBox, and JButton.&#10;See how I did it in this video: https://youtu.be/1IgeJYDuS_8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gather data from a Swing form with JTextField, JComboBox, and JButton.&#10;See how I did it in this video: https://youtu.be/1IgeJYDuS_8" />
+    <MESSAGE value="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -298,6 +306,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
           <line>17</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
