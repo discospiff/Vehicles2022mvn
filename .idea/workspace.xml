@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InventoryReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InventoryReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,9 +56,9 @@
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Driver">
-    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Driver" />
+  <component name="RunManager" selected="Application.DriverForm">
+    <configuration name="DriverForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DriverForm" />
       <module name="Vehicles2022mvn" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Driver" />
-        <item itemvalue="Application.InventoryReader" />
-        <item itemvalue="JUnit.PriusTest" />
+        <item itemvalue="Application.DriverForm" />
         <item itemvalue="JUnit.PriusTest.go_runningWithGas" />
+        <item itemvalue="JUnit.PriusTest" />
         <item itemvalue="JUnit.MustangTest" />
+        <item itemvalue="Application.InventoryReader" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +202,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664333801539</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Create a Java Swing form with nested layouts: BorderLayout, FormLayout, and FlowLayout.&#10;See how I did it in this video: https://youtu.be/WirTuTzfKiE">
+      <created>1665027799932</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665027799932</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Gather data from a Swing form with JTextField, JComboBox, and JButton.&#10;See how I did it in this video: https://youtu.be/1IgeJYDuS_8">
+      <created>1665108469990</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665108469991</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4">
+      <created>1665350974102</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665350974102</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,7 +249,10 @@
     <MESSAGE value="Demonstration of the static keyword for methods and variables.&#10;See how I did it here: https://somup.com/c3Q2nQUxb8" />
     <MESSAGE value="Remove commented code." />
     <MESSAGE value="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE" />
+    <MESSAGE value="Create a Java Swing form with nested layouts: BorderLayout, FormLayout, and FlowLayout.&#10;See how I did it in this video: https://youtu.be/WirTuTzfKiE" />
+    <MESSAGE value="Gather data from a Swing form with JTextField, JComboBox, and JButton.&#10;See how I did it in this video: https://youtu.be/1IgeJYDuS_8" />
+    <MESSAGE value="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -280,13 +304,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
           <line>17</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

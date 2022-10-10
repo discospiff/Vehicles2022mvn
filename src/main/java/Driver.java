@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Driver {
 
-    public final String SONIC = "Sonic";
-    public  final String MUSTANG = "Mustang";
-    public  final String PRIUS = "Prius";
+    public static final String SONIC = "Sonic";
+    public static final String MUSTANG = "Mustang";
+    public static final String PRIUS = "Prius";
     private ArrayList<Vehicle> allVehicles = new ArrayList<>();
 
     private static Driver driver = null;
