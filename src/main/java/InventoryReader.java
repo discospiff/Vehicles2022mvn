@@ -14,7 +14,7 @@ public class InventoryReader {
         runVehicle();
     }
 
-    private static void createVehicle() {
+    public static void createVehicle() {
 
         Path inventoryFilePath = Paths.get("inventory.txt");
         try {
@@ -51,5 +51,16 @@ public class InventoryReader {
             vehicle.go(100);
             System.out.println(vehicle);
         }
+    }
+
+    /**
+     * Fetch a vehicle fromm the collection, by using a unique identifier for the lookup.
+     *
+     * @param vin the unique identifier used to look up this vehicle.
+     * @return the vehicle that matches this VIN.
+     */
+    public static Vehicle fetchVehicle(String vin) {
+        //TODO implement
+        return null;
     }
 }

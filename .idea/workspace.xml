@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Implement Template Method Design Pattern with abstract methods.&#10;See how I did it in this video: https://youtu.be/_DcgvDnx6iE">
-      <change afterPath="$PROJECT_DIR$/src/main/java/WordValidation.java" afterDir="false" />
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Use a Set and LinkedList to filter bad words from a String.&#10;See how I did it in this video: https://youtu.be/qgFs0gkk1Ls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InventoryReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InventoryReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,14 +41,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brandan/IdeaProjects/Vehicles2022mvn&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/Users/Brandan/IdeaProjects/Vehicles2022mvn",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -225,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665350974102</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Use a Set and LinkedList to filter bad words from a String.&#10;See how I did it in this video: https://youtu.be/qgFs0gkk1Ls">
+      <created>1665853328790</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665853328791</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +264,8 @@
     <MESSAGE value="Create a Java Swing form with nested layouts: BorderLayout, FormLayout, and FlowLayout.&#10;See how I did it in this video: https://youtu.be/WirTuTzfKiE" />
     <MESSAGE value="Gather data from a Swing form with JTextField, JComboBox, and JButton.&#10;See how I did it in this video: https://youtu.be/1IgeJYDuS_8" />
     <MESSAGE value="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4" />
+    <MESSAGE value="Use a Set and LinkedList to filter bad words from a String.&#10;See how I did it in this video: https://youtu.be/qgFs0gkk1Ls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use a Set and LinkedList to filter bad words from a String.&#10;See how I did it in this video: https://youtu.be/qgFs0gkk1Ls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -296,12 +307,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>67</line>
+          <line>77</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>69</line>
+          <line>79</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -311,13 +322,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
-          <line>76</line>
+          <line>90</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="25" />
+          <line>36</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,12 +20,21 @@ public class DriverForm {
     private JCheckBox cbxConvertible;
     private JTextField txtDescription;
     private JTextPane textPane1;
+    private JLabel lblVIN;
+    private JTextField txtVIN;
+    private JButton btnSearch;
 
     private Vector<Vehicle> allVehicles =  new Vector<>();
+
+    private Vehicle vehicle;
+
+    private boolean existingVehicle = false;
 
     public DriverForm() {
 
         initializeVehicleTypeComboBox();
+
+        InventoryReader.createVehicle();
 
         lstVehicles.setListData(allVehicles);
         btnSave.addActionListener(new ActionListener() {
@@ -41,7 +50,10 @@ public class DriverForm {
                 double gallonsOfGas = Double.parseDouble(strGallonsOfGas);
 
                 String type = cmbMakeModel.getSelectedItem().toString();
-                Vehicle vehicle = Driver.getInstance().createVehicle(type);
+                if (!existingVehicle) {
+                    // create new vehicle, otherwise update existing vehicle.
+                    vehicle = Driver.getInstance().createVehicle(type);
+                }
 
                 vehicle.setOdometer(odometer);
                 vehicle.setGallonsOfGas(gallonsOfGas);
@@ -60,6 +72,8 @@ public class DriverForm {
 
                 allVehicles.add(vehicle);
                 lstVehicles.updateUI();
+                existingVehicle = false;
+                clearFields();
             }
         });
         btnDrive.addActionListener(new ActionListener() {
@@ -82,6 +96,28 @@ public class DriverForm {
                 }
             }
         });
+        btnSearch.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String vin = txtVIN.getText();
+                vehicle = InventoryReader.fetchVehicle(vin);
+                existingVehicle = true;
+                txtDescription.setText(vehicle.getDescription());
+                txtVIN.setText(vehicle.getVin());
+                txtOdometer.setText("" + vehicle.getOdometer());
+                txtGallonsOfGas.setText("" + vehicle.getGallonsOfGas());
+                txtMilesPerGallon.setText("" + vehicle.getGallonsOfGas());
+            }
+        });
+    }
+
+    private void clearFields() {
+        txtDescription.setText("");
+        txtVIN.setText("");
+        txtDistance.setText("");
+        txtOdometer.setText("");
+        txtGallonsOfGas.setText("");
+        txtMilesPerGallon.setText("");
     }
 
     private void initializeVehicleTypeComboBox() {

@@ -14,6 +14,16 @@ public abstract class Vehicle {
     private double gallonsOfGas = 10.0;
     protected int odometer  = 0;
 
+    protected String vin;
+
+    public String getVin() {
+        return vin;
+    }
+
+    public void setVin(String vin) {
+        this.vin = vin;
+    }
+
     public String getDescription() {
         return description;
     }
