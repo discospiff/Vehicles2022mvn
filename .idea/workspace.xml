@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Use a Set and LinkedList to filter bad words from a String.&#10;See how I did it in this video: https://youtu.be/qgFs0gkk1Ls">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inventory.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InventoryReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InventoryReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/Brandan/IdeaProjects/Vehicles2022mvn",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brandan/IdeaProjects/Vehicles2022mvn&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -235,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665853328791</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt">
+      <created>1665857150078</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665857150078</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +271,8 @@
     <MESSAGE value="Gather data from a Swing form with JTextField, JComboBox, and JButton.&#10;See how I did it in this video: https://youtu.be/1IgeJYDuS_8" />
     <MESSAGE value="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4" />
     <MESSAGE value="Use a Set and LinkedList to filter bad words from a String.&#10;See how I did it in this video: https://youtu.be/qgFs0gkk1Ls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use a Set and LinkedList to filter bad words from a String.&#10;See how I did it in this video: https://youtu.be/qgFs0gkk1Ls" />
+    <MESSAGE value="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -291,13 +298,8 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Prius.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>18</line>
+          <line>20</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -322,23 +324,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
           <line>36</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="28" />
+          <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

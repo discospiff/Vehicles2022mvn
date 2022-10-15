@@ -106,7 +106,7 @@ public class DriverForm {
                 txtVIN.setText(vehicle.getVin());
                 txtOdometer.setText("" + vehicle.getOdometer());
                 txtGallonsOfGas.setText("" + vehicle.getGallonsOfGas());
-                txtMilesPerGallon.setText("" + vehicle.getGallonsOfGas());
+                txtMilesPerGallon.setText("" + vehicle.getMilesPerGallon());
             }
         });
     }

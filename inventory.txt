@@ -1,2 +1,4 @@
-Sonic,26000,30,9
-Prius,15000,25,4
+123456,Sonic,26000,30,9,An economical vehicle
+224466,Prius,15000,25,4,A fuel efficient vehicle
+224466,Prius,16000,26,7,Another fuel efficient vehicle
+113355,Mustang,35000,15,6,A sporty vehicle
