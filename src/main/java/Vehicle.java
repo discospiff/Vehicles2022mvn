@@ -14,6 +14,16 @@ public abstract class Vehicle {
     private double gallonsOfGas = 10.0;
     protected int odometer  = 0;
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    protected String description;
+
     protected int previousOdometer = 0;
 
     private String color;

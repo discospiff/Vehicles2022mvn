@@ -18,6 +18,8 @@ public class DriverForm {
     private JTextField txtMilesPerGallon;
     private JTextField txtGallonsOfGas;
     private JCheckBox cbxConvertible;
+    private JTextField txtDescription;
+    private JTextPane textPane1;
 
     private Vector<Vehicle> allVehicles =  new Vector<>();
 
@@ -44,6 +46,10 @@ public class DriverForm {
                 vehicle.setOdometer(odometer);
                 vehicle.setGallonsOfGas(gallonsOfGas);
                 vehicle.setMilesPerGallon(milesPerGallon);
+                String unFilteredString = txtDescription.getText();
+                String filteredString = WordValidation.getInstance().filterString(unFilteredString);
+                vehicle.setDescription(filteredString);
+                txtDescription.setText(filteredString);
 
                 if (cmbMakeModel.getSelectedItem().toString().equals(Driver.MUSTANG)) {
                     if (vehicle instanceof Mustang) {
