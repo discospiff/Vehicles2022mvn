@@ -16,6 +16,8 @@ public abstract class Vehicle {
 
     protected String vin;
 
+    private Buyer buyer;
+
     public String getVin() {
         return vin;
     }
@@ -86,4 +88,12 @@ public abstract class Vehicle {
     protected abstract List<String> getRecommendations();
 
     protected abstract int getServiceInterval();
+
+    public Buyer getBuyer() {
+        return buyer;
+    }
+
+    public void setBuyer(Buyer buyer) {
+        this.buyer = buyer;
+    }
 }

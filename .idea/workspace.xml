@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt">
+      <change afterPath="$PROJECT_DIR$/buyers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Buyer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BuyerReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inventory.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InventoryReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InventoryReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,12 +312,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>77</line>
+          <line>79</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>79</line>
+          <line>81</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -324,7 +327,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

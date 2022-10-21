@@ -23,6 +23,7 @@ public class DriverForm {
     private JLabel lblVIN;
     private JTextField txtVIN;
     private JButton btnSearch;
+    private JLabel lblBuyerName;
 
     private Vector<Vehicle> allVehicles =  new Vector<>();
 
