@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt">
-      <change afterPath="$PROJECT_DIR$/buyers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Buyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BuyerReader.java" afterDir="false" />
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Update our Swing GUI to accommodate our upcoming Queue and PriorityQueue implementation.&#10;See how I did it in this video: https://somup.com/c36rVkv3ZR">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BuyerReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BuyerReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665857150078</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update our Swing GUI to accommodate our upcoming Queue and PriorityQueue implementation.&#10;See how I did it in this video: https://somup.com/c36rVkv3ZR">
+      <created>1666316469260</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666316469261</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,7 +278,8 @@
     <MESSAGE value="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4" />
     <MESSAGE value="Use a Set and LinkedList to filter bad words from a String.&#10;See how I did it in this video: https://youtu.be/qgFs0gkk1Ls" />
     <MESSAGE value="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt" />
+    <MESSAGE value="Update our Swing GUI to accommodate our upcoming Queue and PriorityQueue implementation.&#10;See how I did it in this video: https://somup.com/c36rVkv3ZR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update our Swing GUI to accommodate our upcoming Queue and PriorityQueue implementation.&#10;See how I did it in this video: https://somup.com/c36rVkv3ZR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,11 +305,6 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
           <line>54</line>
           <option name="timeStamp" value="15" />
@@ -326,19 +325,34 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BuyerReader.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="26" />
+          <line>128</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="29" />
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="30" />
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BuyerReader.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BuyerReader.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

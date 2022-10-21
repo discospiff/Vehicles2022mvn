@@ -2,12 +2,16 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * Read a data file of buyers; create Buyer objects.
  */
 public class BuyerReader {
+
+    private static Queue<Buyer> buyers = new LinkedList<Buyer>();
 
     public static void readBuyers() {
 
@@ -28,6 +32,7 @@ public class BuyerReader {
                     buyer.setLastName(lastName);
                     buyer.setDriversLicenseNumber(driversLicenseNumber);
                     buyer.setPriority(priority);
+                    buyers.offer(buyer);
                 }
             }
         } catch (IOException e) {
@@ -36,5 +41,15 @@ public class BuyerReader {
         }
     }
 
+    public static Buyer fetchNextQualifiedBuyer() {
+        return buyers.peek();
+    }
+
+    public static void removeBuyer(Buyer inBuyer) throws Exception {
+        Buyer nextBuyer = buyers.poll();
+        if (!nextBuyer.equals(inBuyer)) {
+            throw new Exception ("Buyer is not in queue");
+        }
+    }
 
 }

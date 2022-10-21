@@ -30,12 +30,16 @@ public class DriverForm {
     private Vehicle vehicle;
 
     private boolean existingVehicle = false;
+    
+    private Buyer buyer;
 
     public DriverForm() {
 
         initializeVehicleTypeComboBox();
 
         InventoryReader.createVehicle();
+        
+        BuyerReader.readBuyers();
 
         lstVehicles.setListData(allVehicles);
         btnSave.addActionListener(new ActionListener() {
@@ -71,6 +75,13 @@ public class DriverForm {
                     }
                 }
 
+                try {
+                    BuyerReader.removeBuyer(buyer);
+                    vehicle.setBuyer(buyer);
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Unable to associate buyer with this vehicle.");
+                }
+
                 allVehicles.add(vehicle);
                 lstVehicles.updateUI();
                 existingVehicle = false;
@@ -95,6 +106,8 @@ public class DriverForm {
                     cbxConvertible.setEnabled(false);
                     cbxConvertible.setSelected(false);
                 }
+                buyer = BuyerReader.fetchNextQualifiedBuyer();
+                lblBuyerName.setText(buyer.getFirstName() + " " + buyer.getLastName());
             }
         });
         btnSearch.addActionListener(new ActionListener() {
@@ -119,6 +132,7 @@ public class DriverForm {
         txtOdometer.setText("");
         txtGallonsOfGas.setText("");
         txtMilesPerGallon.setText("");
+        lblBuyerName.setText("");
     }
 
     private void initializeVehicleTypeComboBox() {
