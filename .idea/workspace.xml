@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Use java.util.Queue in our Java program.&#10;See how I did it in this video: https://somup.com/c36rnEv3uZ">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Use java.util.PriorityQueue in our Java program.&#10;See how I did it in this video: https://youtu.be/kzhZJ-j8OeU">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Palendrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Buyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BuyerReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BuyerReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DriverForm">
+  <component name="RunManager" selected="Application.Palendrome">
     <configuration name="DriverForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DriverForm" />
       <module name="Vehicles2022mvn" />
@@ -67,8 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InventoryReader" />
+    <configuration name="Palendrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Palendrome" />
       <module name="Vehicles2022mvn" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Palendrome" />
         <item itemvalue="Application.DriverForm" />
         <item itemvalue="JUnit.PriusTest.go_runningWithGas" />
         <item itemvalue="JUnit.PriusTest" />
         <item itemvalue="JUnit.MustangTest" />
-        <item itemvalue="Application.InventoryReader" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666320279786</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Use java.util.PriorityQueue in our Java program.&#10;See how I did it in this video: https://youtu.be/kzhZJ-j8OeU">
+      <created>1666837021548</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666837021548</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,7 +293,8 @@
     <MESSAGE value="Update our Swing GUI to accommodate our upcoming refactor to HashMap.&#10;See how I did it in this video: https://somup.com/c36oFhv2rt" />
     <MESSAGE value="Update our Swing GUI to accommodate our upcoming Queue and PriorityQueue implementation.&#10;See how I did it in this video: https://somup.com/c36rVkv3ZR" />
     <MESSAGE value="Use java.util.Queue in our Java program.&#10;See how I did it in this video: https://somup.com/c36rnEv3uZ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use java.util.Queue in our Java program.&#10;See how I did it in this video: https://somup.com/c36rnEv3uZ" />
+    <MESSAGE value="Use java.util.PriorityQueue in our Java program.&#10;See how I did it in this video: https://youtu.be/kzhZJ-j8OeU" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use java.util.PriorityQueue in our Java program.&#10;See how I did it in this video: https://youtu.be/kzhZJ-j8OeU" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -341,6 +348,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/Buyer.java</url>
           <line>15</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Palendrome.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Palendrome.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Palendrome.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
