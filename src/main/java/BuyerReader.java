@@ -4,6 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Queue;
  */
 public class BuyerReader {
 
-    private static Queue<Buyer> buyers = new LinkedList<Buyer>();
+    private static Queue<Buyer> buyers = new PriorityQueue<>();
 
     public static void readBuyers() {
 
