@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Use java.util.PriorityQueue in our Java program.&#10;See how I did it in this video: https://youtu.be/kzhZJ-j8OeU">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Palendrome.java" afterDir="false" />
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Demonstrate recursion by testing for palendromes.&#10;See how I did it in this video: https://somup.com/c36te0vvoE">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gasoline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,7 @@
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Palendrome">
+  <component name="RunManager" selected="Application.DriverForm">
     <configuration name="DriverForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DriverForm" />
       <module name="Vehicles2022mvn" />
@@ -103,8 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Palendrome" />
         <item itemvalue="Application.DriverForm" />
+        <item itemvalue="Application.Palendrome" />
         <item itemvalue="JUnit.PriusTest.go_runningWithGas" />
         <item itemvalue="JUnit.PriusTest" />
         <item itemvalue="JUnit.MustangTest" />
@@ -260,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666837021548</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Demonstrate recursion by testing for palendromes.&#10;See how I did it in this video: https://somup.com/c36te0vvoE">
+      <created>1666841044061</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666841044061</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,7 +304,8 @@
     <MESSAGE value="Update our Swing GUI to accommodate our upcoming Queue and PriorityQueue implementation.&#10;See how I did it in this video: https://somup.com/c36rVkv3ZR" />
     <MESSAGE value="Use java.util.Queue in our Java program.&#10;See how I did it in this video: https://somup.com/c36rnEv3uZ" />
     <MESSAGE value="Use java.util.PriorityQueue in our Java program.&#10;See how I did it in this video: https://youtu.be/kzhZJ-j8OeU" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use java.util.PriorityQueue in our Java program.&#10;See how I did it in this video: https://youtu.be/kzhZJ-j8OeU" />
+    <MESSAGE value="Demonstrate recursion by testing for palendromes.&#10;See how I did it in this video: https://somup.com/c36te0vvoE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demonstrate recursion by testing for palendromes.&#10;See how I did it in this video: https://somup.com/c36te0vvoE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -326,28 +337,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>79</line>
+          <line>118</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>81</line>
+          <line>120</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
           <line>17</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Buyer.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Buyer.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Palendrome.java</url>
@@ -363,6 +364,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Palendrome.java</url>
           <line>31</line>
           <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

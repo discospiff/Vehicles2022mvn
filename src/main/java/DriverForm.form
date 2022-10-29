@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="DriverForm">
   <grid id="27dc6" binding="pnlMain" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="583" height="432"/>
+      <xy x="20" y="20" width="722" height="506"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -53,6 +53,10 @@
             <rowspec value="center:max(d;4px):noGrow"/>
             <rowspec value="top:4dlu:noGrow"/>
             <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
             <rowspec value="top:4dlu:noGrow"/>
             <rowspec value="center:max(d;4px):noGrow"/>
             <rowspec value="top:4dlu:noGrow"/>
@@ -226,6 +230,51 @@
                   <text value=""/>
                 </properties>
               </component>
+              <component id="41c8d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Added Gas"/>
+                </properties>
+              </component>
+              <component id="26aed" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Price Per Gallon"/>
+                </properties>
+              </component>
+              <component id="f12a7" class="javax.swing.JTextField" binding="txtGasAdded">
+                <constraints>
+                  <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="3792" class="javax.swing.JTextField" binding="txtPricePerGallon">
+                <constraints>
+                  <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="f2be9" class="javax.swing.JButton" binding="btnAddGas">
+                <constraints>
+                  <grid row="18" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Add Gas"/>
+                </properties>
+              </component>
             </children>
           </grid>
           <grid id="a74e0" binding="pnlInnerCenter" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
@@ -236,10 +285,10 @@
               <component id="1d781" class="javax.swing.JList" binding="lstVehicles">
                 <constraints/>
                 <properties>
-                  <maximumSize width="600" height="200"/>
-                  <minimumSize width="400" height="100"/>
+                  <maximumSize width="700" height="200"/>
+                  <minimumSize width="700" height="100"/>
                   <model/>
-                  <preferredSize width="400" height="100"/>
+                  <preferredSize width="700" height="100"/>
                 </properties>
               </component>
               <component id="f76d1" class="javax.swing.JTextPane" binding="textPane1" default-binding="true">

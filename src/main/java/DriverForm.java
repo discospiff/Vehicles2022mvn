@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Stack;
 import java.util.Vector;
 
 public class DriverForm {
@@ -24,6 +25,9 @@ public class DriverForm {
     private JTextField txtVIN;
     private JButton btnSearch;
     private JLabel lblBuyerName;
+    private JTextField txtGasAdded;
+    private JTextField txtPricePerGallon;
+    private JButton btnAddGas;
 
     private Vector<Vehicle> allVehicles =  new Vector<>();
 
@@ -33,7 +37,11 @@ public class DriverForm {
     
     private Buyer buyer;
 
+    private Stack<Gasoline> gasoline;
+
     public DriverForm() {
+
+        gasoline = new Stack<>();
 
         initializeVehicleTypeComboBox();
 
@@ -68,6 +76,8 @@ public class DriverForm {
                 vehicle.setDescription(filteredString);
                 txtDescription.setText(filteredString);
 
+                vehicle.setGasoline(gasoline);
+
                 if (cmbMakeModel.getSelectedItem().toString().equals(Driver.MUSTANG)) {
                     if (vehicle instanceof Mustang) {
                         Mustang mustang = (Mustang) vehicle;
@@ -86,6 +96,7 @@ public class DriverForm {
                 lstVehicles.updateUI();
                 existingVehicle = false;
                 clearFields();
+                gasoline = new Stack<Gasoline>();
             }
         });
         btnDrive.addActionListener(new ActionListener() {
@@ -123,6 +134,20 @@ public class DriverForm {
                 txtMilesPerGallon.setText("" + vehicle.getMilesPerGallon());
             }
         });
+        btnAddGas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String strGasAdded = txtGasAdded.getText();
+                double gasAdded = Double.parseDouble(strGasAdded);
+                String strPricePerGallon = txtPricePerGallon.getText();
+                double pricePerGallon = Double.parseDouble(strPricePerGallon);
+                Gasoline gas = new Gasoline();
+                gas.setGallons(gasAdded);
+                gas.setPrice(pricePerGallon);
+                gasoline.push(gas);
+
+            }
+        });
     }
 
     private void clearFields() {
@@ -133,6 +158,8 @@ public class DriverForm {
         txtGallonsOfGas.setText("");
         txtMilesPerGallon.setText("");
         lblBuyerName.setText("");
+        txtGasAdded.setText("");
+        txtPricePerGallon.setText("");
     }
 
     private void initializeVehicleTypeComboBox() {
