@@ -3,18 +3,20 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class InventoryReader {
 
-    private static List<Vehicle> allVehicles = new ArrayList<>();
+    private static Map<String, Vehicle> allVehicles = new HashMap<>();
 
     public static void main(String[] args) {
         createVehicle();
         runVehicle();
     }
 
-    private static void createVehicle() {
+    public static void createVehicle() {
 
         Path inventoryFilePath = Paths.get("inventory.txt");
         try {
@@ -23,19 +25,23 @@ public class InventoryReader {
             for (String inventoryItem: inventoryLines)
             {
                 String[] inventoryArray = inventoryItem.split(",");
-                if (inventoryArray.length >= 4) {
-                    String carType = inventoryArray[0];
-                    String strOdometer = inventoryArray[1];
+                if (inventoryArray.length >= 6) {
+                    String vin = inventoryArray[0];
+                    String carType = inventoryArray[1];
+                    String strOdometer = inventoryArray[2];
                     int odometer = Integer.parseInt(strOdometer);
-                    String strMilesPerGallon = inventoryArray[2];
+                    String strMilesPerGallon = inventoryArray[3];
                     int milesPerGallon = Integer.parseInt(strMilesPerGallon);
-                    String strGallonsOfGas = inventoryArray[3];
+                    String strGallonsOfGas = inventoryArray[4];
                     double gallonsOfGas = Double.parseDouble(strGallonsOfGas);
                     Vehicle vehicle = Driver.getInstance().createVehicle(carType);
+                    String description = inventoryArray[5];
+                    vehicle.setVin(vin);
                     vehicle.setOdometer(odometer);
                     vehicle.setGallonsOfGas(gallonsOfGas);
                     vehicle.setMilesPerGallon(milesPerGallon);
-                    allVehicles.add(vehicle);
+                    vehicle.setDescription(description);
+                    allVehicles.put(vin, vehicle);
                 }
             }
         } catch (IOException e) {
@@ -44,8 +50,18 @@ public class InventoryReader {
         }
     }
 
+    /**
+     * Fetch a vehicle fromm the collection, by using a unique identifier for the lookup.
+     *
+     * @param vin the unique identifier used to look up this vehicle.
+     * @return the vehicle that matches this VIN.
+     */
+    public static Vehicle fetchVehicle(String vin) {
+        return allVehicles.get(vin);
+    }
+
     private static void runVehicle() {
-        for (Vehicle vehicle : allVehicles
+        for (Vehicle vehicle : allVehicles.values()
              ) {
             System.out.println(vehicle);
             vehicle.go(100);

@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public abstract class Vehicle {
 
@@ -13,6 +14,30 @@ public abstract class Vehicle {
     private int milesPerGallon = 20;
     private double gallonsOfGas = 10.0;
     protected int odometer  = 0;
+
+    protected String vin;
+
+    private Buyer buyer;
+
+    private Stack<Gasoline> gasoline = new Stack<>();
+
+    public String getVin() {
+        return vin;
+    }
+
+    public void setVin(String vin) {
+        this.vin = vin;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    protected String description;
 
     protected int previousOdometer = 0;
 
@@ -44,13 +69,49 @@ public abstract class Vehicle {
 
     public void go(int milesDriven) {
         previousOdometer = getOdometer();
-        setGallonsOfGas(getGallonsOfGas() - (milesDriven / getMilesPerGallon()));
+        double gallonsConsumed = milesDriven / getMilesPerGallon();
+        setGallonsOfGas(getGallonsOfGas() - (gallonsConsumed));
         setOdometer(getOdometer() + milesDriven);
+        do {
+            Gasoline gas = gasoline.peek();
+            double gallonsInPeek = gas.getGallons();
+            if (gallonsConsumed == gallonsInPeek) {
+                gasoline.pop();
+                gallonsConsumed = 0;
+            } else if (gallonsConsumed < gallonsInPeek) {
+                gas.setGallons(gas.getGallons() - gallonsConsumed);
+                gallonsConsumed = 0;
+            } else if (gallonsConsumed > gallonsInPeek) {
+                gallonsConsumed -= gallonsInPeek;
+                gasoline.pop();
+            }
+        } while (gallonsConsumed > 0);
+
+    }
+
+    private double computeTotalGasValue() {
+        double value = 0;
+        for (Gasoline gas: gasoline)
+        {
+            value += gas.getGallons() * gas.getPrice();
+        }
+        return value;
+    }
+
+    private double computeAverageGasValue() {
+        double value = 0;
+        double gallons = 0;
+        for (Gasoline gas: gasoline)
+        {
+            value += gas.getGallons() * gas.getPrice();
+            gallons += gas.getGallons();
+        }
+        return value/gallons;
     }
 
     @Override
     public String toString() {
-        return " Odometer " + getOdometer() + " Gallons of Gas " + getGallonsOfGas();
+        return " Odometer " + getOdometer() + " Gallons of Gas " + getGallonsOfGas() + " Average cost per gallon: " + computeAverageGasValue() + " Total cost per gallon: " + computeTotalGasValue();
     }
 
     public List<String> checkForRequiredMaintenance() {
@@ -66,4 +127,20 @@ public abstract class Vehicle {
     protected abstract List<String> getRecommendations();
 
     protected abstract int getServiceInterval();
+
+    public Buyer getBuyer() {
+        return buyer;
+    }
+
+    public void setBuyer(Buyer buyer) {
+        this.buyer = buyer;
+    }
+
+    public Stack<Gasoline> getGasoline() {
+        return gasoline;
+    }
+
+    public void setGasoline(Stack<Gasoline> gasoline) {
+        this.gasoline = gasoline;
+    }
 }
