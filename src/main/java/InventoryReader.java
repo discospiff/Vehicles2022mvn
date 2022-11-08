@@ -6,10 +6,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Consumer;
 
 public class InventoryReader {
 
     private static Map<String, Vehicle> allVehicles = new HashMap<>();
+
+    private static Consumer<Vehicle> method = vehicle -> {
+        System.out.println(vehicle);
+        vehicle.go(100);
+        System.out.println(vehicle);};
 
     public static void main(String[] args) {
         createVehicle();
@@ -61,11 +67,6 @@ public class InventoryReader {
     }
 
     private static void runVehicle() {
-        for (Vehicle vehicle : allVehicles.values()
-             ) {
-            System.out.println(vehicle);
-            vehicle.go(100);
-            System.out.println(vehicle);
-        }
+        allVehicles.values().forEach(method);
     }
 }

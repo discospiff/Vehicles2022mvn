@@ -72,21 +72,22 @@ public abstract class Vehicle {
         double gallonsConsumed = milesDriven / getMilesPerGallon();
         setGallonsOfGas(getGallonsOfGas() - (gallonsConsumed));
         setOdometer(getOdometer() + milesDriven);
-        do {
-            Gasoline gas = gasoline.peek();
-            double gallonsInPeek = gas.getGallons();
-            if (gallonsConsumed == gallonsInPeek) {
-                gasoline.pop();
-                gallonsConsumed = 0;
-            } else if (gallonsConsumed < gallonsInPeek) {
-                gas.setGallons(gas.getGallons() - gallonsConsumed);
-                gallonsConsumed = 0;
-            } else if (gallonsConsumed > gallonsInPeek) {
-                gallonsConsumed -= gallonsInPeek;
-                gasoline.pop();
-            }
-        } while (gallonsConsumed > 0);
-
+        if (!gasoline.isEmpty()) {
+            do {
+                Gasoline gas = gasoline.peek();
+                double gallonsInPeek = gas.getGallons();
+                if (gallonsConsumed == gallonsInPeek) {
+                    gasoline.pop();
+                    gallonsConsumed = 0;
+                } else if (gallonsConsumed < gallonsInPeek) {
+                    gas.setGallons(gas.getGallons() - gallonsConsumed);
+                    gallonsConsumed = 0;
+                } else if (gallonsConsumed > gallonsInPeek) {
+                    gallonsConsumed -= gallonsInPeek;
+                    gasoline.pop();
+                }
+            } while (gallonsConsumed > 0);
+        }
     }
 
     private double computeTotalGasValue() {
@@ -95,6 +96,7 @@ public abstract class Vehicle {
         {
             value += gas.getGallons() * gas.getPrice();
         }
+
         return value;
     }
 

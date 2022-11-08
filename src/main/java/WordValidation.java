@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class WordValidation {
 
@@ -29,6 +30,7 @@ public class WordValidation {
         for(String word: wordsLinkedList) {
             wordsBuilder.append(word).append(" ");
         }
+
         return wordsBuilder.toString();
     }
 }

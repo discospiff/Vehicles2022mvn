@@ -104,7 +104,7 @@ public class DriverForm {
             public void actionPerformed(ActionEvent e) {
                 String strDistance = txtDistance.getText();
                 int distance = Integer.parseInt(strDistance);
-                allVehicles.stream().forEach(vehicle -> {vehicle.go(distance);});
+                allVehicles.stream().forEach(vehicle -> vehicle.go(distance));
                 lstVehicles.updateUI();
             }
         });
