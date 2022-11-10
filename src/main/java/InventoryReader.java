@@ -1,3 +1,6 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,6 +15,8 @@ public class InventoryReader {
 
     private static Map<String, Vehicle> allVehicles = new HashMap<>();
 
+    private static final Logger logger = LogManager.getLogger("vehicles");
+
     private static Consumer<Vehicle> method = vehicle -> {
         System.out.println(vehicle);
         vehicle.go(100);
@@ -23,10 +28,9 @@ public class InventoryReader {
     }
 
     public static void createVehicle() {
-
-        Path inventoryFilePath = Paths.get("inventory.txt");
+        logger.info("Reading Vehicles");
+        Path inventoryFilePath = Paths.get("inventory2.txt");
         try {
-
             List<String> inventoryLines = Files.readAllLines(inventoryFilePath);
             for (String inventoryItem: inventoryLines)
             {
@@ -52,9 +56,11 @@ public class InventoryReader {
             }
         } catch (IOException e) {
             // did something go wrong?  We'll end up here.
-            throw new RuntimeException(e);
+            logger.error(e.getMessage());
+            throw new RuntimeException(e.getMessage());
 
         }
+        logger.info("Finished Reading Vehicles");
     }
 
     /**

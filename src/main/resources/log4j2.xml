@@ -1,0 +1,25 @@
+<Configuration status="info">
+    <Properties>
+        <Property name="layout">%d [%t] %-5level %logger - %m%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${layout}" />
+        </Console>
+        <File name="LogFile" fileName="app.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="vehicles" level="info" additivity="false" >
+            <AppenderRef ref="LogFile" />
+            <AppenderRef ref="Console" />
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>
