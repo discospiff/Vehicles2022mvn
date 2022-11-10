@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Show Java objects in a List, and invoke toString()&#10;See how I did it in this video: https://youtu.be/lwp3GHT8gj4">
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Implement and demonstrate Streams.&#10;See how I did it in this video: https://youtu.be/ca4bZZfaq7g">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InventoryReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InventoryReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
@@ -61,7 +62,7 @@
       <recent name="C:\Users\Brandan\IdeaProjects\Vehicles2022mvn\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InventoryReader">
+  <component name="RunManager" selected="Application.DriverForm">
     <configuration name="DriverForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DriverForm" />
       <module name="Vehicles2022mvn" />
@@ -104,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InventoryReader" />
         <item itemvalue="Application.DriverForm" />
+        <item itemvalue="Application.InventoryReader" />
         <item itemvalue="Application.Palendrome" />
         <item itemvalue="JUnit.PriusTest.go_runningWithGas" />
         <item itemvalue="JUnit.PriusTest" />
@@ -268,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666841044061</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Implement and demonstrate Lambdas.&#10;See how I did it in this video: https://somup.com/c3Xj1nvm4n">
+      <created>1667887405595</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667887405597</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,7 +311,9 @@
     <MESSAGE value="Use java.util.Queue in our Java program.&#10;See how I did it in this video: https://somup.com/c36rnEv3uZ" />
     <MESSAGE value="Use java.util.PriorityQueue in our Java program.&#10;See how I did it in this video: https://youtu.be/kzhZJ-j8OeU" />
     <MESSAGE value="Demonstrate recursion by testing for palendromes.&#10;See how I did it in this video: https://somup.com/c36te0vvoE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demonstrate recursion by testing for palendromes.&#10;See how I did it in this video: https://somup.com/c36te0vvoE" />
+    <MESSAGE value="Implement and demonstrate Lambdas.&#10;See how I did it in this video: https://somup.com/c3Xj1nvm4n" />
+    <MESSAGE value="Implement and demonstrate Streams.&#10;See how I did it in this video: https://youtu.be/ca4bZZfaq7g" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement and demonstrate Streams.&#10;See how I did it in this video: https://youtu.be/ca4bZZfaq7g" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -335,12 +345,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>120</line>
+          <line>122</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Vehicle.java</url>
-          <line>122</line>
+          <line>124</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -364,19 +374,22 @@
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/WordValidation.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
           <line>15</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>69</line>
+          <line>70</line>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>154</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

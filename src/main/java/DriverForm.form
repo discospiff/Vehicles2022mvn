@@ -36,6 +36,12 @@
               <text value="Drive"/>
             </properties>
           </component>
+          <component id="b6f9a" class="javax.swing.JButton" binding="btnHighMpgVehicles">
+            <constraints/>
+            <properties>
+              <text value="High MPG Vehicles"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <component id="e0482" class="javax.swing.JLabel">

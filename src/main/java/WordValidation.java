@@ -30,7 +30,7 @@ public class WordValidation {
         for(String word: wordsLinkedList) {
             wordsBuilder.append(word).append(" ");
         }
-
+        String streamWords = wordsLinkedList.stream().collect(Collectors.joining(" "));
         return wordsBuilder.toString();
     }
 }

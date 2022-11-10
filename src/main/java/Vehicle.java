@@ -97,6 +97,8 @@ public abstract class Vehicle {
             value += gas.getGallons() * gas.getPrice();
         }
 
+
+        double streamSum = gasoline.stream().mapToDouble(gas -> gas.getGallons() * gas.getPrice()).sum();
         return value;
     }
 

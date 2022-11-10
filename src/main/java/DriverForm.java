@@ -28,6 +28,7 @@ public class DriverForm {
     private JTextField txtGasAdded;
     private JTextField txtPricePerGallon;
     private JButton btnAddGas;
+    private JButton btnHighMpgVehicles;
 
     private Vector<Vehicle> allVehicles =  new Vector<>();
 
@@ -146,6 +147,13 @@ public class DriverForm {
                 gas.setPrice(pricePerGallon);
                 gasoline.push(gas);
 
+            }
+        });
+        btnHighMpgVehicles.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                long highMpgVehicles = allVehicles.stream().filter(vehicle -> vehicle.getMilesPerGallon() > 40).count();
+                JOptionPane.showMessageDialog(null, "Number of High MPG Vehicles: " + highMpgVehicles);
             }
         });
     }

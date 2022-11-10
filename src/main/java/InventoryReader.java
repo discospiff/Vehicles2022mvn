@@ -53,6 +53,7 @@ public class InventoryReader {
         } catch (IOException e) {
             // did something go wrong?  We'll end up here.
             throw new RuntimeException(e);
+
         }
     }
 
