@@ -23,13 +23,18 @@ public class InventoryReader {
         System.out.println(vehicle);};
 
     public static void main(String[] args) {
-        createVehicle();
-        runVehicle();
+        try {
+            createVehicle();
+            runVehicle();
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+        }
+
     }
 
-    public static void createVehicle() {
+    public static void createVehicle() throws Exception {
         logger.info("Reading Vehicles");
-        Path inventoryFilePath = Paths.get("inventory2.txt");
+        Path inventoryFilePath = Paths.get("inventory.txt");
         try {
             List<String> inventoryLines = Files.readAllLines(inventoryFilePath);
             for (String inventoryItem: inventoryLines)
@@ -52,13 +57,20 @@ public class InventoryReader {
                     vehicle.setMilesPerGallon(milesPerGallon);
                     vehicle.setDescription(description);
                     allVehicles.put(vin, vehicle);
+                } else {
+                    logger.warn("Array does not have 6 elements.");
                 }
             }
         } catch (IOException e) {
             // did something go wrong?  We'll end up here.
             logger.error(e.getMessage());
-            throw new RuntimeException(e.getMessage());
+            throw e;
 
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+            throw e;
+        } finally {
+            logger.info("Wrapping up the inventory file read.");
         }
         logger.info("Finished Reading Vehicles");
     }

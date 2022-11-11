@@ -1,3 +1,6 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -40,14 +43,21 @@ public class DriverForm {
 
     private Stack<Gasoline> gasoline;
 
+    private static final Logger logger = LogManager.getLogger("vehicles");
+
     public DriverForm() {
 
         gasoline = new Stack<>();
 
         initializeVehicleTypeComboBox();
 
-        InventoryReader.createVehicle();
-        
+        try {
+            InventoryReader.createVehicle();
+        } catch (Exception e) {
+            logger.error(e);
+            JOptionPane.showMessageDialog(null, "Unable to read inventory file.");
+        }
+
         BuyerReader.readBuyers();
 
         lstVehicles.setListData(allVehicles);

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Implement and demonstrate Streams.&#10;See how I did it in this video: https://youtu.be/ca4bZZfaq7g">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+    <list default="true" id="5263db8e-ffa6-4a60-915f-7f53eaf94f7f" name="Changes" comment="Add log4j logging to our program.&#10;See how I did it in this video: https://somup.com/c3X6hHvdWb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InventoryReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InventoryReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -281,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668050351952</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Add log4j logging to our program.&#10;See how I did it in this video: https://somup.com/c3X6hHvdWb">
+      <created>1668059305385</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668059305385</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,7 +324,8 @@
     <MESSAGE value="Demonstrate recursion by testing for palendromes.&#10;See how I did it in this video: https://somup.com/c36te0vvoE" />
     <MESSAGE value="Implement and demonstrate Lambdas.&#10;See how I did it in this video: https://somup.com/c3Xj1nvm4n" />
     <MESSAGE value="Implement and demonstrate Streams.&#10;See how I did it in this video: https://youtu.be/ca4bZZfaq7g" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement and demonstrate Streams.&#10;See how I did it in this video: https://youtu.be/ca4bZZfaq7g" />
+    <MESSAGE value="Add log4j logging to our program.&#10;See how I did it in this video: https://somup.com/c3X6hHvdWb" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add log4j logging to our program.&#10;See how I did it in this video: https://somup.com/c3X6hHvdWb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -385,12 +392,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>76</line>
+          <line>88</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
-          <line>154</line>
+          <line>164</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -398,18 +405,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="68" />
+          <line>36</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="69" />
+          <line>38</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="70" />
+          <line>65</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DriverForm.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/InventoryReader.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
