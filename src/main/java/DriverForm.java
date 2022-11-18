@@ -4,6 +4,7 @@ import org.apache.logging.log4j.Logger;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
 import java.util.Stack;
 import java.util.Vector;
 
@@ -32,6 +33,9 @@ public class DriverForm {
     private JTextField txtPricePerGallon;
     private JButton btnAddGas;
     private JButton btnHighMpgVehicles;
+    private JComboBox comboBox1;
+    private JButton btnSaveToFile;
+    private JButton btnOpenFile;
 
     private Vector<Vehicle> allVehicles =  new Vector<>();
 
@@ -164,6 +168,39 @@ public class DriverForm {
             public void actionPerformed(ActionEvent e) {
                 long highMpgVehicles = allVehicles.stream().filter(vehicle -> vehicle.getMilesPerGallon() > 40).count();
                 JOptionPane.showMessageDialog(null, "Number of High MPG Vehicles: " + highMpgVehicles);
+            }
+        });
+        btnSaveToFile.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try (FileOutputStream file = new FileOutputStream("vehicles.obj")) {
+                    ObjectOutputStream oos = new ObjectOutputStream(file);
+                    oos.writeObject(allVehicles);
+                    oos.flush();
+                    oos.close();
+                } catch (FileNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
+        btnOpenFile.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try (FileInputStream file = new FileInputStream("vehicles.obj")) {
+                    ObjectInputStream ois = new ObjectInputStream(file);
+                    Vector<Vehicle> inVehicles = (Vector<Vehicle>) ois.readObject();
+                    allVehicles.addAll(inVehicles);
+                    lstVehicles.updateUI();
+                    ois.close();
+                } catch (FileNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                } catch (ClassNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
     }

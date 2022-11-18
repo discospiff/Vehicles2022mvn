@@ -1,10 +1,11 @@
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Represents a person who wants to acquire a vehicle.
  */
-public class Buyer implements Comparable<Buyer> {
+public class Buyer implements Comparable<Buyer>, Serializable {
     private String firstName;
     private String lastName;
     private String driversLicenseNumber;

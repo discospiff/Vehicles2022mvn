@@ -1,8 +1,9 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Serializable {
 
 
     public Vehicle() {

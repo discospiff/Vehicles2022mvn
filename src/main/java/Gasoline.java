@@ -1,4 +1,6 @@
-public class Gasoline {
+import java.io.Serializable;
+
+public class Gasoline  implements Serializable {
     private double gallons;
     private double price;
 

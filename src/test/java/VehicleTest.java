@@ -14,7 +14,7 @@ public class VehicleTest {
     }
 
     protected void givenVehicleHas0Odometer15GallonsOfGasAnd20MilesPerGallon() {
-        vehicle = new Vehicle();
+        vehicle = new Sonic();
         vehicle.setOdometer(0);
         vehicle.setGallonsOfGas(15);
         vehicle.setMilesPerGallon(20);

@@ -42,6 +42,22 @@
               <text value="High MPG Vehicles"/>
             </properties>
           </component>
+          <component id="40549" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="424ab" class="javax.swing.JButton" binding="btnSaveToFile">
+            <constraints/>
+            <properties>
+              <text value="Save to File"/>
+            </properties>
+          </component>
+          <component id="87331" class="javax.swing.JButton" binding="btnOpenFile">
+            <constraints/>
+            <properties>
+              <text value="Open File"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <component id="e0482" class="javax.swing.JLabel">
