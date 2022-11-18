@@ -179,8 +179,10 @@ public class DriverForm {
                     oos.flush();
                     oos.close();
                 } catch (FileNotFoundException ex) {
+                    logger.error(ex);
                     throw new RuntimeException(ex);
                 } catch (IOException ex) {
+                    logger.error(ex);
                     throw new RuntimeException(ex);
                 }
             }
@@ -195,10 +197,13 @@ public class DriverForm {
                     lstVehicles.updateUI();
                     ois.close();
                 } catch (FileNotFoundException ex) {
+                    logger.error(ex);
                     throw new RuntimeException(ex);
                 } catch (IOException ex) {
+                    logger.error(ex);
                     throw new RuntimeException(ex);
                 } catch (ClassNotFoundException ex) {
+                    logger.error(ex);
                     throw new RuntimeException(ex);
                 }
             }
