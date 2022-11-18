@@ -42,6 +42,27 @@
               <text value="High MPG Vehicles"/>
             </properties>
           </component>
+          <component id="16e69" class="javax.swing.JComboBox" binding="cmbFileType">
+            <constraints/>
+            <properties>
+              <model>
+                <item value="Object"/>
+                <item value="JSON"/>
+              </model>
+            </properties>
+          </component>
+          <component id="76721" class="javax.swing.JButton" binding="btnSaveToFile">
+            <constraints/>
+            <properties>
+              <text value="Save to File"/>
+            </properties>
+          </component>
+          <component id="54ec6" class="javax.swing.JButton" binding="btnOpen">
+            <constraints/>
+            <properties>
+              <text value="Open"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <component id="e0482" class="javax.swing.JLabel">
